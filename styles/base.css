@@ -1,0 +1,23 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --pink: #FF007A;
+    --light-blue: #8EC5FC;
+    --blue: #4FA7FF;
+    --light-lilac: #E0C3FC;
+}
+
+.dark {
+    --white: #000;
+    --black: #fff;
+}
+
+body {
+    background-color: var(--white);
+    margin: 0px;
+    width: 100vw;
+    max-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

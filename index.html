@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+
+<body>
+    <menu class="main__menu disabled">
+        <a class="menu__a" href="index.html">HOME</a>
+        <a class="menu__a" href="">PROMOÇÕES</a>
+        <a class="menu__a" href="https://www.instagram.com/mar_demicangass/">SEGUIR</a>
+        <a class="menu__a" href="">CONTACT-ME</a>
+        <a class="menu__a" href="">REPORTAR BUG</a>
+        <footer class="menu__footer">
+            <p>Todos os direitos - free on github</p>
+        </footer>
+    </menu>
+
+    <header class="header">
+        <a href="https://api.whatsapp.com/send?phone=55557185538434&text=ol%C3%A1%2C%20tenho%20interesse%20em%20um%20produto%20da%20sua%20loja" class="header__item">
+            <ion-icon class="header__icon icon--call" name="call"></ion-icon>
+            <p class="header__text">(71)98886-9389</p>
+        </a>
+        <a href="https://www.instagram.com/mar_demicangass/" class="header__item">
+            <ion-icon class="header__icon icon--instagram" name="logo-instagram"></ion-icon>
+            <p class="header__text">@mar_demicangass</p>
+        </a>
+    </header>
+    <main class="main" id="main">
+
+        <div class="flex-row " style="width: 100%;margin: 25px 0px;">
+            <ion-icon class="main__daynight" onclick="daynight()" name="moon-outline"></ion-icon>
+            <article class="flex-center main__logo">
+                <img class="logo__img" src="assets/img/logo.jpg" alt="logo">
+                <h1 class="logo__tittle">Mar de<br>Miçangas</h1>
+            </article>
+            <ion-icon class="main__menutoggle" onclick="menutoggle()" name="menu-outline"></ion-icon>
+        </div>
+
+        <div class="main__search">
+            <input class="search__input" placeholder="O que você procura hoje?" type="search" name="" id="">
+            <ion-icon class="search__icon" name="search-outline"></ion-icon>
+        </div>
+
+        <div class="main__presentation flex-row">
+            <div class="flex-column">
+                <p class="presentation__text text--pink">Entregamos em toda Salvador</p>
+                <p class="presentation__text text--black">Entregas Rápidas e Seguras</p>
+            </div>
+
+            <div class="flex-column">
+                <p class="presentation__text text--pink">Muita cor e muito amor</p>
+                <p class="presentation__text text--black">Confiança e Segurança</p>
+            </div>
+
+            <div class="flex-column">
+                <p class="presentation__text text--pink">Criamos e Personalizamos</p>
+                <p class="presentation__text text--black">Acessórios que refletem seu estilo</p>
+            </div>
+        </div>
+
+        <h2 class="main__h2">Categorias<div class="h2__underline"></div>
+        </h2>
+
+        <ul class="main__categories">
+            <li class="categories__li">
+                <a class="flex-column categories__a" href="">
+                    <img class="categories__img" src="assets/img/294461164_596074795365471_7304939941719174586_n.jpg"
+                        alt="">
+                    materiais
+                </a>
+
+            </li>
+
+            <li class="categories__li">
+                <a class="flex-column categories__a" href="">
+                    <img class="categories__img" src="assets/img/WhatsApp Image 2022-09-13 at 18.08.48.jpeg" alt="">
+                    Anéis
+                </a>
+            </li>
+
+            <li class="categories__li">
+                <a class="flex-column categories__a" href="">
+                    <img class="categories__img" src="assets/img/294464034_1031263460908406_7307700359894271476_n.jpg"
+                        alt="">
+                    Pulseiras
+                </a>
+            </li>
+
+            <li class="categories__li">
+                <a class="flex-column categories__a" href="">
+                    <img class="categories__img" src="assets/img/283950014_402375721845093_6805558278468498392_n.jpg"
+                        alt="">
+                    Correntes
+                </a>
+            </li>
+
+            <li class="categories__li">
+                <a class="flex-column categories__a" href="">
+                    <img class="categories__img" src="assets/img/bb83004a-b760-403b-a704-28b887d9c5e9.jpg" alt="">
+                    Brincos
+                </a>
+            </li>
+        </ul>
+
+        <h2 class="main__h2">Acessórios Mais Vistos<div class="h2__underline"></div>
+        </h2>
+
+        <section class="main__section section--mostseen">
+
+            <article class="mostseen__card">
+                <figure class="card__figure">
+                    <img class="card__img" src="assets/img/crocker para casal.jpg" alt="">
+                    <figcaption class="card__subtitle">pulseiras para casal</figcaption>
+                </figure>
+                <span class="card__price">R$ 10,00</span>
+                <a href="https://api.whatsapp.com/send?phone=55557185538434&text=oi,%20gostaria%20de%20fazer%20um%20pedido!" class="card__button">Compre o Seu</a>
+            </article>
+
+            <article class="mostseen__card">
+                <figure class="card__figure">
+                    <img class="card__img" src="assets/img/anel de olho grego.jpg" alt="">
+                    <figcaption class="card__subtitle">Anél de olho grego</figcaption>
+                </figure>
+                <span class="card__price">R$ 10,00</span>
+                <a href="https://api.whatsapp.com/send?phone=55557185538434&text=oi,%20gostaria%20de%20fazer%20um%20pedido!" class="card__button">Compre o Seu</a>
+            </article>
+
+            <article class="mostseen__card">
+                <figure class="card__figure">
+                    <img class="card__img" src="assets/img/crocker com inicial.jpg" alt="">
+                    <figcaption class="card__subtitle">pulseira com inicial</figcaption>
+                </figure>
+                <span class="card__price">R$ 10,00</span>
+                <a href="https://api.whatsapp.com/send?phone=55557185538434&text=oi,%20gostaria%20de%20fazer%20um%20pedido!" class="card__button">Compre o Seu</a>
+            </article>
+
+            <article class="mostseen__card">
+                <figure class="card__figure">
+                    <img class="card__img" src="assets/img/283950014_402375721845093_6805558278468498392_n.jpg" alt="">
+                    <figcaption class="card__subtitle">colar preto e branco</figcaption>
+                </figure>
+                <span class="card__price">R$ 10,00</span>
+                <a href="https://api.whatsapp.com/send?phone=55557185538434&text=oi,%20gostaria%20de%20fazer%20um%20pedido!" class="card__button">Compre o Seu</a>
+            </article>
+
+        </section>
+
+
+        <footer class="main__footer">
+            <p>2022 - Todos Os Direitos Reservados</p>
+        </footer>
+    </main>
+    <script src="animation.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

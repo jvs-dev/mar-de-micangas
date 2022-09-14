@@ -1,0 +1,33 @@
+.header {
+    background: linear-gradient(#8EC5FC, #E0C3FC);
+    padding: 16px 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__item {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.header__icon {
+    font-size: 30px;
+}
+
+.icon--instagram {
+    color: white;
+    background: linear-gradient(225deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    border-radius: 9px;
+}
+
+.icon--call {
+    color: var(--pink);
+}
+
+.header__text {
+    color: black;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: 0px 0px 0px 5px;
+}
